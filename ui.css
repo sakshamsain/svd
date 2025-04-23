@@ -1,0 +1,83 @@
+/* Visual SVD */
+/* Scott Clayton */
+
+.matrix-container {
+    display: flex;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.matrix {
+    border: 2px solid #333;
+    display: inline-block;
+}
+
+.m-cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 -1px -1px 0;
+}
+
+.m-cell.m-error {
+    background-color: #C86467;
+}
+
+.m-cell.m-good {
+    background-color: #55A451;
+}
+
+.m-cell.m-predict {
+    background-color: #3D7B79;
+}
+
+.m-cell.m-feat {
+    background-color: #CA9265;
+}
+
+.m-cell.m-empty {
+    background-color: #EEE;
+}
+
+#matrixActual {
+    min-width: 250px;
+}
+
+#matrixPredict {
+    min-width: 400px;
+}
+
+#matrixError {
+    min-width: 250px;
+}
+
+.svd-matrices {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+#matrixU, #matrixVT {
+    min-width: 200px;
+}
+
+#matrixSigma {
+    min-width: 150px;
+}
+
+button {
+    padding: 8px 20px;
+    background: #3D7B79;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.stats {
+    margin-top: 20px;
+    font-size: 1.2em;
+}

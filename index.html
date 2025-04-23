@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Factorization</title>
+    <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+    <h2>Matrix Factorization</h2>
+    
+    
+    <div class="matrix-container">
+        <div>
+            <h4>Original Matrix</h4>
+            <div id="matrixActual" class="matrix"></div>
+            <button id="btnGo">Go</button>
+        </div>
+        
+        <div>
+            <h4>Decomposed Matrix</h4>
+            <div id="matrixPredict" class="matrix"></div>
+        </div>
+        
+        <div>
+            <h4>Error Matrix</h4>
+            <div id="matrixError" class="matrix"></div>
+        </div>
+    </div>
+
+    <div class="svd-matrices">
+        <div>
+            <h4>U Matrix</h4>
+            <div id="matrixU" class="matrix"></div>
+        </div>
+        <div>
+            <h4>Σ Matrix</h4>
+            <div id="matrixSigma" class="matrix"></div>
+        </div>
+        <div>
+            <h4>Vᵀ Matrix</h4>
+            <div id="matrixVT" class="matrix"></div>
+        </div>
+    </div>
+
+    <div class="stats">
+        <div>RMSE: <span id="rmse">0</span></div>
+        <div>Iterations: <span id="iterations">0</span></div>
+    </div>
+    <div class="chart-container">
+        <canvas id="rmseChart"></canvas>
+    </div>
+    
+    <!-- Add Chart.js CDN before your existing script -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="path/to/svd.js"></script>
+    <script src="path/to/ui.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="svd.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
